@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-background: var(--background-color);
+  --color-accent: var(--accent-color);
+}
+
+:root {
+  --primary-color: #C5A059;
+  --secondary-color: #111111;
+  --background-color: #070707;
+  --accent-color: #E0D8D0;
+  --border-color: #262626;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* DA Card Shadow */
+.da-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* DA Border Pattern */
+.da-border {
+  border: 1px solid var(--border-color);
+}
+
+.da-border-hover {
+  @apply transition-all duration-300;
+}
+
+.da-border-hover:hover {
+  border-color: var(--primary-color);
+}

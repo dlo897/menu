@@ -1,0 +1,6 @@
+{
+  "name": "Cinematic Multilingual Menu",
+  "description": "A dark-mode digital menu powered by Supabase with real-time updates and an advanced admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["Multilingual", "Admin Dashboard", "Real-time Theme Engine"]
+}
